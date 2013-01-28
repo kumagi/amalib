@@ -1,0 +1,17 @@
+{
+    "name": "Amazon to Library",
+    "version": "0.1",
+    "description": "Amazon Page to Musashino Library",
+
+    "icons": { "48": "icon.jpg",
+             "128": "icon.jpg" },
+    "background": {
+        "page": "background.html"
+    },
+    "content_scripts": [{
+        "matches": ["http://www.amazon.co.jp/*"],
+        "js": ["contentscript.js"]
+    }],
+    "permissions": ["contextMenus","tabs"],
+    "manifest_version": 2
+}
